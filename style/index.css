@@ -1,0 +1,34 @@
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	background-size: cover;
+	font-family:'Montserrat', sans-serif;
+	background-color: #fefae0;
+	color: #252525;
+}
+.main_page{
+	width: 100%;
+	min-height: 760px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap :2em;
+	flex-direction: row;
+}
+
+.main{
+	grid-column: 2 / span 8;
+	padding-top: 3.5em;
+	padding-bottom: 3.5em;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1030px) {
+	.main{
+		grid-column: 1 / span 10;
+	}
+}

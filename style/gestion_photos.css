@@ -1,0 +1,46 @@
+.button {
+    border-radius: 20px;
+    background-color: #e9edc9;
+    padding: 10px 20px;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.select_id_animal{
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 290px;
+}
+
+.image_wrapper button {
+    width: 100%;
+    /* border-radius: 20%; */
+    background-color: #e9edc9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.image_wrapper {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.image_wrapper button[name="delete_photo"] {
+    margin: 0 auto;
+}

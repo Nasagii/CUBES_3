@@ -1,0 +1,133 @@
+/*  ===== HEADER ===== */
+/* header */
+.links li, .dropdown_menu li{
+	list-style: none;
+}
+
+header{
+	position: relative;
+	padding: 0.5em 6em;
+	margin:0 auto;
+	background-color: #ccd5ae;
+	/* background-color: #fceadf; */
+	justify-content: space-between;
+}
+.navigation {
+	width: 100%;
+	height: 100px;
+	max-width: 1200px;
+	margin:0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	gap: 2em;
+}
+.navigation .links { 
+	display: flex;
+	gap: 2em;
+}
+header a {
+	margin: 0.5em;
+    width: 130px;
+    height: 50px;
+    position: relative;
+    font-size: 1.5em;
+    color: #030305;
+    text-decoration: none;
+    font-weight: 500; 
+	cursor: pointer;
+}
+
+/* animation sous les ecritures */
+.links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #a7001e;
+    border-radius: 10px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.links a:hover::after {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+/*  menu */
+.navigation .toggle_btn {
+	color: #030350; 
+	font-size: 1.5em;
+	cursor: pointer;
+	display: none;
+}
+.dropdown_menu {
+	display: none;
+}
+.dropdown_menu li {
+
+	padding: 0.7rem;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+/* ===== ===== */
+@media (max-width: 1030px) {
+	.format{
+		display: none;
+	}
+	.navigation .links,
+	.navigation .action_btn {
+		display: none;
+	}
+	.navigation .toggle_btn { 
+		display: block;
+	}
+	
+	header a {
+		font-size: 1.5em;
+	}
+	.dropdown_menu { 
+		display: flex;
+		position: absolute;
+		right: 10em;
+		top: 30px;
+		width: auto;
+		height:0;
+		overflow: hidden;
+		transition: height 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
+	}
+	.dropdown_menu.open{
+		height: auto;
+	}
+	
+}
+@media (max-width: 480px) {
+    header{
+        padding: 1em;
+    }
+        
+    .dropdown_menu { 
+        display: block;
+        position: absolute;
+        right: 3em;
+        top: 5px;
+        width: auto;
+        height:0;
+        overflow: hidden;
+        transition: height 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
+    }
+    .dropdown_menu.open{
+        height: auto;
+    }
+	.format{
+		display: none;
+	}
+}

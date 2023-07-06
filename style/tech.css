@@ -1,0 +1,69 @@
+.gestion_tech{
+	background-color: #e9edc9;
+	padding: 2vw 0;
+}
+.denied{
+	background-color: #e9edc9;
+	padding: 2vw 0;
+	text-align: center;
+}
+.cat {
+	font-size: 1.5vw;
+	padding: 0 2vw;
+}
+.gestion_animaux a{
+	text-decoration: none;
+}
+.gestion_animaux p {
+	color: #333;
+	font-size: 1vw;
+	padding: 0.5vw 5vw;
+}
+
+.acces h1 {
+  
+  font-size: calc(4rem + 2vw);
+	text-transform: uppercase;
+}
+.acces p {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.ghost {
+   position: absolute;
+  top: 20vh;
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  animation: hoverGhost calc(60s/2) ease-in-out 2;
+
+}
+.ghost:before {
+  content: 'You know you\'re supposed to leave, right?';
+  color: #282B24;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  text-align: center;
+  line-height: 2;
+  padding: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  animation:
+    showText calc(60s/8) calc(60s*3/16) ease-out forwards,
+    showNewText calc(60s/8) calc(60s*27/40) ease-out forwards,
+    showFinalText calc(60s/8) 60s ease-out forwards;
+
+}
+
+@keyframes hoverGhost {
+  25% {
+    transform: translateX(20vw);
+  }
+  75% {
+    transform: translateX(-20vw);
+  }
+}

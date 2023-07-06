@@ -1,0 +1,100 @@
+.coti {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.coti h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.coti li{
+    text-align: left;
+}
+
+.important {
+    color: red;
+}
+.coti .italique {
+    font-style: italic;
+    font-weight: bold;
+    align-items: end;
+}
+.coti  .link {
+    font-size: 16px;
+    color: blue;
+    text-decoration: underline;
+    display: inline-block;
+    margin-right: 10px;
+}
+.DLbutton {
+
+    font-size: 16px;
+    color: white;
+    background-color: #d4a373;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+
+}
+.DLbutton:hover {
+    background-color: #b8895b;
+}
+.pdf-container {
+    margin-bottom: 20px;
+    margin-top: 100px;
+    background-color: #e9edc9;
+    padding: 1vw;
+}
+
+.coti embed{
+    padding: 2vw;
+}
+
+.coti table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100%;
+}
+.coti th, .coti td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .coti table, .coti thead, .coti tbody, .coti th, .coti td, .coti tr {
+        display: block;
+    }
+    .coti thead tr {
+        display: none;
+    }
+    .coti td {
+        border-top: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .coti td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+@media (max-width: 480px) {
+    .coti embed{
+        display: none;
+    }
+}
+.paypal {
+    text-transform: uppercase;
+    color: navy;
+    margin-top: 20px;
+}
+.coordonnees {
+    text-transform: uppercase;
+    color: navy;
+    text-align: center;
+    margin-top: 20px;
+}

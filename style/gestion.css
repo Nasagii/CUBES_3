@@ -1,0 +1,23 @@
+.gestion_page{
+	background-color: #e9edc9;
+	padding: 2vw;
+}
+
+.gestion table {
+	border-collapse: collapse;
+	margin: 20px auto;
+	
+}
+.gestion th, td {
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+}
+.retour{
+	color: grey;
+	font-size: 0.8vw;
+	display:flex;
+	flex-direction: row-reverse;
+	text-decoration: none;
+	padding: 0.5vw;
+}

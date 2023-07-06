@@ -1,0 +1,101 @@
+
+/* ===== FOOTER ===== */
+
+.footer ul{
+	list-style: none;
+}
+.footer{
+	background-color: #ccd5ae;
+	padding: 20px 0;
+	display: grid;
+	bottom:0px;
+	grid-template-columns: repeat(4,1fr);
+	column-gap: 10px;
+	grid-template-areas: 
+	 "logo contacts horaires medias";
+}
+.footer img{
+	grid-area: logo;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+.contacts{
+	grid-area: contacts;
+}
+.horaires{
+	grid-area: horaires;
+}
+.medias{
+	grid-area: medias;
+}
+footer h4{
+	font-size: 18px;
+	color: #030350;
+	/*text-transform: capitalize;*/
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+footer h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #a7001e;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+footer ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+footer ul li a{
+	font-size: 16px;
+	/*text-transform: capitalize;*/
+	color: #030350;
+	text-decoration: none;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+}
+footer ul li a:hover{
+	color: #000;
+	padding-left: 8px;
+}
+.medias .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #030350;
+	transition: all 0.5s ease;
+}
+.medias .social-links a:hover{
+	color: #24262b;
+	background-color: #fff;
+}
+/* ===== ===== */
+@media (max-width: 480px) {
+
+.footer{
+	background-color: #ccd5ae;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	column-gap: 10px;
+	grid-template-areas: 
+	 "contacts horaires medias";
+  }
+.footer .logo{
+	display: none;
+  }
+
+
+
+
+
+}
